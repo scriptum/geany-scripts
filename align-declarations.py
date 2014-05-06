@@ -20,4 +20,4 @@ for line in fileinput.input():
 maxlen += 1
 
 for line in lines:
-	print ("%s%-"+str(maxlen - len(line[2]) + len(line[2].lstrip("*")))+"s%s") % (line[0], line[1], line[2])
+	print ("%s%-"+str(maxlen - len(line[2]) + len(line[2].lstrip("*(")))+"s%s") % (line[0], line[1], line[2])
