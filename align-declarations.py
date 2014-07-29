@@ -6,7 +6,7 @@ import sys, fileinput, re
 lines = []
 maxlen = 0
 
-exp = re.compile("(^\s*)((?:static |const |#define )*\w+)\s*(.*)$")
+exp = re.compile("(^\s*)((?:signed |unsigned |static |const |#define )*\w+)\s*(.*)$")
 
 STRIPCHARS="*()-"
 
